@@ -1,8 +1,11 @@
 "use client";
 
+import React from "react";
 import Image from "next/image";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 // Animation variants
 const fadeInUp = {
@@ -27,7 +30,7 @@ export default function Home() {
     {
       initials: "AJ",
       initialsColor: "#5a5ad6",
-      text: '"Sandblox bridges the gap we&apos;ve been trying to close for years—between curriculum and real-life readiness."',
+      text: '"Sandblox bridges the gap we\'ve been trying to close for years—between curriculum and real-life readiness."',
       author: "Mr. Bennett,",
       role: "High School Educator",
       cardBg: "bg-[#5a5ad6]",
@@ -35,7 +38,7 @@ export default function Home() {
     {
       initials: "MR",
       initialsColor: "#a41e1e",
-      text: '"This isn&apos;t just a game—it&apos;s a mindset shift. Students are more engaged, more confident, and thinking beyond the classroom."',
+      text: "\"This isn't just a game—it's a mindset shift. Students are more engaged, more confident, and thinking beyond the classroom.\"",
       author: "Ms. Rodriguez,",
       role: "Teacher, Westview Academy",
       cardBg: "bg-[#a41e1e]",
@@ -44,7 +47,7 @@ export default function Home() {
     {
       initials: "AJ",
       initialsColor: "#5a5ad6",
-      text: '"Sandblox bridges the gap we&apos;ve been trying to close for years—between curriculum and real-life readiness."',
+      text: '"Sandblox bridges the gap we\'ve been trying to close for years—between curriculum and real-life readiness."',
       author: "Mr. Bennett,",
       role: "High School Educator",
       cardBg: "bg-[#5a5ad6]",
@@ -52,7 +55,7 @@ export default function Home() {
     {
       initials: "MR",
       initialsColor: "#a41e1e",
-      text: '"This isn&apos;t just a game—it&apos;s a mindset shift. Students are more engaged, more confident, and thinking beyond the classroom."',
+      text: "\"This isn't just a game—it's a mindset shift. Students are more engaged, more confident, and thinking beyond the classroom.\"",
       author: "Ms. Rodriguez,",
       role: "Teacher, Westview Academy",
       cardBg: "bg-[#a41e1e]",
@@ -60,7 +63,7 @@ export default function Home() {
     {
       initials: "AJ",
       initialsColor: "#5a5ad6",
-      text: '"Sandblox bridges the gap we&apos;ve been trying to close for years—between curriculum and real-life readiness."',
+      text: '"Sandblox bridges the gap we\'ve been trying to close for years—between curriculum and real-life readiness."',
       author: "Mr. Bennett,",
       role: "High School Educator",
       cardBg: "bg-[#5a5ad6]",
@@ -68,7 +71,7 @@ export default function Home() {
     {
       initials: "MR",
       initialsColor: "#a41e1e",
-      text: '"This isn&apos;t just a game—it&apos;s a mindset shift. Students are more engaged, more confident, and thinking beyond the classroom."',
+      text: "\"This isn't just a game—it's a mindset shift. Students are more engaged, more confident, and thinking beyond the classroom.\"",
       author: "Ms. Rodriguez,",
       role: "Teacher, Westview Academy",
       cardBg: "bg-[#a41e1e]",
@@ -86,36 +89,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-white flex flex-col font-sans">
-      {/* Navbar */}
-      <motion.nav
-        className="w-full bg-[#a41e1e] flex items-center justify-between px-24 py-4 shadow-md"
-        initial="hidden"
-        animate="visible"
-        variants={fadeIn}
-      >
-        <div className="flex items-center gap-4">
-          <Image
-            src="/Home Page/1a.webp"
-            alt="Sandblox Logo"
-            width={140}
-            height={40}
-            className="h-10 w-auto"
-          />
-        </div>
-        <ul className="hidden md:flex gap-6 text-white font-semibold italic text-lg pr-24 items-center">
-          <li className="text-yellow-400">HOME</li>
-          <li className="hover:text-yellow-400 cursor-pointer">ABOUT</li>
-          <li className="hover:text-yellow-400 cursor-pointer">GAME</li>
-          <li className="hover:text-yellow-400 cursor-pointer">SKILLS</li>
-          <li className="hover:text-yellow-400 cursor-pointer">JOIN</li>
-          <li className="hover:text-yellow-400 cursor-pointer">EVENTS</li>
-          <li className="hover:text-yellow-400 cursor-pointer">CONTACT</li>
-
-          <button className="bg-yellow-400 text-black font-bold px-4 py-1 rounded shadow hover:bg-yellow-300 transition">
-            GET STARTED
-          </button>
-        </ul>
-      </motion.nav>
+      <Navbar />
 
       {/* Hero Section */}
       <motion.section
@@ -124,7 +98,7 @@ export default function Home() {
         animate="visible"
         variants={fadeInUp}
       >
-        <div className=" px-16 flex-1 flex flex-col gap-6">
+        <div className="px-16 flex-1 flex flex-col gap-6">
           <h1 className="text-3xl md:text-5xl font-extrabold text-black italic leading-tight">
             IGNITE YOUR FUTURE WITH{" "}
             <span className="text-[#a41e1e]">SANDBLOX</span>
@@ -133,7 +107,6 @@ export default function Home() {
             An innovative board game that prepares high school students for
             real-world challenges through interactive gameplay, skill-building,
             and personalized experiences.
-            <br />
           </p>
           <div className="flex gap-4 mt-2">
             <button className="bg-yellow-400 text-black font-bold px-6 py-2 italic rounded shadow hover:bg-yellow-300 transition">
@@ -454,108 +427,7 @@ export default function Home() {
         </div>
       </motion.section>
 
-      {/* Footer */}
-      <motion.footer
-        className="w-full bg-[#f3f3f3] text-black pt-8 pb-4"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.3 }}
-        variants={fadeIn}
-      >
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-8 px-8">
-          <div className="flex flex-col gap-2">
-            <Image
-              src="/Home Page/1a.webp"
-              alt="Sandblox Logo"
-              width={180}
-              height={48}
-              className="mb-2"
-            />
-            <p className="text-sm max-w-xs">
-              Preparing students for real-world challenges through interactive
-              gameplay.
-            </p>
-            <div className="flex gap-2 mt-2">
-              <a href="#">
-                <Image
-                  src="/Home Page/6d.webp"
-                  alt="Instagram"
-                  width={24}
-                  height={24}
-                />
-              </a>
-              <a href="#">
-                <Image
-                  src="/Home Page/6b.webp"
-                  alt="Twitter"
-                  width={24}
-                  height={24}
-                />
-              </a>
-              <a href="#">
-                <Image
-                  src="/Home Page/6c.webp"
-                  alt="Facebook"
-                  width={24}
-                  height={24}
-                />
-              </a>
-            </div>
-          </div>
-          <div className="flex flex-col gap-1">
-            <span className="font-bold text-[#a41e1e] italic mb-1">
-              SITE LINKS
-            </span>
-            <a href="#" className="hover:text-[#a41e1e]">
-              Home
-            </a>
-            <a href="#" className="hover:text-[#a41e1e]">
-              About
-            </a>
-            <a href="#" className="hover:text-[#a41e1e]">
-              Game
-            </a>
-            <a href="#" className="hover:text-[#a41e1e]">
-              Skills
-            </a>
-          </div>
-          <div className="flex flex-col gap-1">
-            <span className="font-bold text-[#a41e1e] italic mb-1">
-              RESOURCES
-            </span>
-            <a href="#" className="hover:text-[#a41e1e]">
-              Join the Movement
-            </a>
-            <a href="#" className="hover:text-[#a41e1e]">
-              Events & Pilots
-            </a>
-            <a href="#" className="hover:text-[#a41e1e]">
-              Contact
-            </a>
-            <a href="#" className="hover:text-[#a41e1e]">
-              Download App
-            </a>
-          </div>
-          <div className="flex flex-col gap-2">
-            <span className="font-bold text-[#a41e1e] italic mb-1">
-              NEWSLETTER
-            </span>
-            <form className="flex gap-2">
-              <input
-                type="email"
-                placeholder="Your email"
-                className="px-3 py-2 rounded border border-gray-300 focus:outline-none"
-              />
-              <button className="bg-[#a41e1e] text-white px-4 py-2 rounded font-bold hover:bg-[#c0392b] italic">
-                SUBSCRIBE
-              </button>
-            </form>
-          </div>
-        </div>
-        <div className="text-center text-xs text-gray-600 mt-6 border-t pt-4">
-          &copy; 2025 Sandblox. All rights reserved.
-        </div>
-      </motion.footer>
+      <Footer />
     </div>
   );
 }
