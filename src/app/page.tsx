@@ -27,7 +27,7 @@ export default function Home() {
     {
       initials: "AJ",
       initialsColor: "#5a5ad6",
-      text: '"Sandblox bridges the gap we\'ve been trying to close for years—between curriculum and real-life readiness."',
+      text: '"Sandblox bridges the gap we&apos;ve been trying to close for years—between curriculum and real-life readiness."',
       author: "Mr. Bennett,",
       role: "High School Educator",
       cardBg: "bg-[#5a5ad6]",
@@ -35,7 +35,7 @@ export default function Home() {
     {
       initials: "MR",
       initialsColor: "#a41e1e",
-      text: "\"This isn't just a game—it's a mindset shift. Students are more engaged, more confident, and thinking beyond the classroom.\"",
+      text: '"This isn&apos;t just a game—it&apos;s a mindset shift. Students are more engaged, more confident, and thinking beyond the classroom."',
       author: "Ms. Rodriguez,",
       role: "Teacher, Westview Academy",
       cardBg: "bg-[#a41e1e]",
@@ -44,7 +44,7 @@ export default function Home() {
     {
       initials: "AJ",
       initialsColor: "#5a5ad6",
-      text: '"Sandblox bridges the gap we\'ve been trying to close for years—between curriculum and real-life readiness."',
+      text: '"Sandblox bridges the gap we&apos;ve been trying to close for years—between curriculum and real-life readiness."',
       author: "Mr. Bennett,",
       role: "High School Educator",
       cardBg: "bg-[#5a5ad6]",
@@ -52,7 +52,7 @@ export default function Home() {
     {
       initials: "MR",
       initialsColor: "#a41e1e",
-      text: "\"This isn't just a game—it's a mindset shift. Students are more engaged, more confident, and thinking beyond the classroom.\"",
+      text: '"This isn&apos;t just a game—it&apos;s a mindset shift. Students are more engaged, more confident, and thinking beyond the classroom."',
       author: "Ms. Rodriguez,",
       role: "Teacher, Westview Academy",
       cardBg: "bg-[#a41e1e]",
@@ -60,7 +60,7 @@ export default function Home() {
     {
       initials: "AJ",
       initialsColor: "#5a5ad6",
-      text: '"Sandblox bridges the gap we\'ve been trying to close for years—between curriculum and real-life readiness."',
+      text: '"Sandblox bridges the gap we&apos;ve been trying to close for years—between curriculum and real-life readiness."',
       author: "Mr. Bennett,",
       role: "High School Educator",
       cardBg: "bg-[#5a5ad6]",
@@ -68,7 +68,7 @@ export default function Home() {
     {
       initials: "MR",
       initialsColor: "#a41e1e",
-      text: "\"This isn't just a game—it's a mindset shift. Students are more engaged, more confident, and thinking beyond the classroom.\"",
+      text: '"This isn&apos;t just a game—it&apos;s a mindset shift. Students are more engaged, more confident, and thinking beyond the classroom."',
       author: "Ms. Rodriguez,",
       role: "Teacher, Westview Academy",
       cardBg: "bg-[#a41e1e]",
@@ -198,9 +198,11 @@ export default function Home() {
             <div className="absolute top-3 left-3 w-full h-full bg-black rounded z-0"></div>
             <div className="relative bg-white border-2 border-black rounded z-10 w-full h-full p-6 flex flex-col items-center text-center">
               <div className="absolute -top-7 left-1/2 -translate-x-1/2 w-14 h-14 bg-blue-400 rounded-lg flex items-center justify-center shadow-md">
-                <img
+                <Image
                   src="/Home Page/3a.webp"
                   alt="Real-world Skills"
+                  width={32}
+                  height={32}
                   className="w-8 h-8"
                 />
               </div>
@@ -223,9 +225,11 @@ export default function Home() {
             <div className="absolute top-3 left-3 w-full h-full bg-black rounded z-0"></div>
             <div className="relative bg-white border-2 border-black rounded z-10 w-full h-full p-6 flex flex-col items-center text-center">
               <div className="absolute -top-7 left-1/2 -translate-x-1/2 w-14 h-14 bg-purple-400 rounded-lg flex items-center justify-center shadow-md">
-                <img
+                <Image
                   src="/Home Page/3b.webp"
                   alt="Personalized Learning"
+                  width={32}
+                  height={32}
                   className="w-8 h-8"
                 />
               </div>
@@ -234,8 +238,8 @@ export default function Home() {
                   PERSONALIZED LEARNING
                 </h3>
                 <p className="text-black text-base font-normal">
-                  Every journey adapts to the player's strengths, goals, and
-                  personality.
+                  Every journey adapts to the player&apos;s strengths, goals,
+                  and personality.
                 </p>
               </div>
             </div>
@@ -248,9 +252,11 @@ export default function Home() {
             <div className="absolute top-3 left-3 w-full h-full bg-black rounded z-0"></div>
             <div className="relative bg-white border-2 border-black rounded z-10 w-full h-full p-6 flex flex-col items-center text-center">
               <div className="absolute -top-7 left-1/2 -translate-x-1/2 w-14 h-14 bg-green-500 rounded-lg flex items-center justify-center shadow-md">
-                <img
+                <Image
                   src="/Home Page/3c.webp"
                   alt="Mentorship that Matters"
+                  width={32}
+                  height={32}
                   className="w-8 h-8"
                 />
               </div>
@@ -272,9 +278,11 @@ export default function Home() {
             <div className="absolute top-3 left-3 w-full h-full bg-black rounded z-0"></div>
             <div className="relative bg-white border-2 border-black rounded z-10 w-full h-full p-6 flex flex-col items-center text-center">
               <div className="absolute -top-7 left-1/2 -translate-x-1/2 w-14 h-14 bg-yellow-400 rounded-lg flex items-center justify-center shadow-md">
-                <img
+                <Image
                   src="/Home Page/3d.webp"
                   alt="Purpose-driven Play"
+                  width={32}
+                  height={32}
                   className="w-8 h-8"
                 />
               </div>
@@ -284,7 +292,7 @@ export default function Home() {
                 </h3>
                 <p className="text-black text-base font-normal">
                   Game-based challenges that help teens explore who they are and
-                  where they're headed.
+                  where they&apos;re headed.
                 </p>
               </div>
             </div>
@@ -304,7 +312,7 @@ export default function Home() {
           WHAT STUDENTS & EDUCATORS SAY
         </h2>
         <p className="text-center text-gray-700 mb-8">
-          Hear from those who've experienced the Sandblox difference
+          Hear from those who&apos;ve experienced the Sandblox difference
         </p>
         <div className="mt-20 flex flex-row gap-8 max-w-4xl mx-auto justify-center items-stretch relative">
           {/* Left arrow */}

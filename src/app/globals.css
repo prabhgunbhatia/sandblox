@@ -1,19 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700;800&display=swap");
 @import "tailwindcss";
 
-@font-face {
-  font-family: "Rubik";
-  src: url("/rubik/Rubik-VariableFont_wght.ttf") format("truetype");
-  font-weight: 100 900;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Rubik";
-  src: url("/rubik/Rubik-Italic-VariableFont_wght.ttf") format("truetype");
-  font-weight: 100 900;
-  font-style: italic;
-  font-display: swap;
-}
 
 :root {
   --background: #ffffff;
@@ -40,5 +27,5 @@ body {
 h1,
 h2,
 h3 {
-  font-family: var(--font-sans);
+  font-family: "Rubik", sans-serif;
 }
