@@ -66,17 +66,36 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <Link href="#" className="hover:text-yellow-400">
+          <Link
+            href="/skills"
+            className={
+              pathname === "/skills"
+                ? "text-yellow-400"
+                : "hover:text-yellow-400"
+            }
+          >
             SKILLS
           </Link>
         </li>
         <li>
-          <Link href="#" className="hover:text-yellow-400">
+          <Link
+            href="/join"
+            className={
+              pathname === "/join" ? "text-yellow-400" : "hover:text-yellow-400"
+            }
+          >
             JOIN
           </Link>
         </li>
         <li>
-          <Link href="#" className="hover:text-yellow-400">
+          <Link
+            href="/events"
+            className={
+              pathname === "/events"
+                ? "text-yellow-400"
+                : "hover:text-yellow-400"
+            }
+          >
             EVENTS
           </Link>
         </li>
