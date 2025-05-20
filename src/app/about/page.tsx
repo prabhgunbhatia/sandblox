@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
@@ -211,7 +211,7 @@ export default function About() {
           </button>
           {/* Team Members */}
           <div className="flex flex-row gap-8 justify-center items-stretch">
-            {slides[slide].map((member, idx) => (
+            {slides[slide].map((member) => (
               <div
                 key={member.name}
                 className="relative flex flex-col min-w-[220px] max-w-[250px] overflow-hidden p-0"
@@ -286,19 +286,19 @@ export default function About() {
               <br />
               <br />
               In business, we saw young adults struggle with confidence and
-              decision-making. At home and school, the focus was on grades—not
-              growth. And everyone agreed: the world is changing fast, but
-              education isn't keeping up.
+              decision-making. At home and school, the focus was on
+              grades&mdash;not growth. And everyone agreed: the world is
+              changing fast, but education isn&apos;t keeping up.
               <br />
               <br />
-              That's why we created Sandblox—a hands-on learning platform where
-              teens build real-world skills like financial literacy, leadership,
-              and emotional intelligence through interactive games and
-              purpose-driven challenges.
+              That&apos;s why we created Sandblox&mdash;a hands-on learning
+              platform where teens build real-world skills like financial
+              literacy, leadership, and emotional intelligence through
+              interactive games and purpose-driven challenges.
               <br />
               <br />
-              It's not school. It's not an accelerator. It's a sandbox—where
-              teens practice life, not just prepare for it.
+              It&apos;s not school. It&apos;s not an accelerator. It&apos;s a
+              sandbox&mdash;where teens practice life, not just prepare for it.
             </p>
           </div>
           <div className="flex-1 grid grid-rows-2 grid-cols-2 gap-x-8 gap-y-10 place-items-stretch">
