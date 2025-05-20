@@ -56,7 +56,12 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <Link href="#" className="hover:text-yellow-400">
+          <Link
+            href="/game"
+            className={
+              pathname === "/game" ? "text-yellow-400" : "hover:text-yellow-400"
+            }
+          >
             GAME
           </Link>
         </li>
@@ -82,7 +87,7 @@ export default function Navbar() {
         </li>
 
         <button className="bg-yellow-400 text-black font-bold px-4 py-1 rounded shadow hover:bg-yellow-300 transition">
-          GET STARTED
+          DONATE
         </button>
       </ul>
     </motion.nav>
