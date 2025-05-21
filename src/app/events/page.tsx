@@ -9,9 +9,6 @@ const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.7 } },
 };
-const stagger = {
-  visible: { transition: { staggerChildren: 0.18 } },
-};
 
 export default function Events() {
   return (
@@ -406,10 +403,11 @@ export default function Events() {
               </div>
             </div>
             <p className="text-black text-base mb-2">
-              "We implemented Sandblox across all 9th grade advisory classes.
-              Within one semester, we saw a 32% improvement in students&apos;
-              self-reported confidence in financial decision-making and a 27%
-              increase in communication skills as measured by our assessments."
+              &quot;We implemented Sandblox across all 9th grade advisory
+              classes. Within one semester, we saw a 32% improvement in
+              students&apos; self-reported confidence in financial
+              decision-making and a 27% increase in communication skills as
+              measured by our assessments.&quot;
             </p>
             <div className="text-black text-sm mt-2">
               <span className="font-bold text-lg text-blue-700">
@@ -437,10 +435,11 @@ export default function Events() {
               </div>
             </div>
             <p className="text-black text-base mb-2">
-              "We implemented Sandblox across all 9th grade advisory classes.
-              Within one semester, we saw a 32% improvement in students&apos;
-              self-reported confidence in financial decision-making and a 27%
-              increase in communication skills as measured by our assessments."
+              &quot;We implemented Sandblox across all 9th grade advisory
+              classes. Within one semester, we saw a 32% improvement in
+              students&apos; self-reported confidence in financial
+              decision-making and a 27% increase in communication skills as
+              measured by our assessments.&quot;
             </p>
             <div className="text-black text-sm mt-2">
               <span className="font-bold text-lg text-blue-700">
