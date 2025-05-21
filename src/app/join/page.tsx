@@ -60,109 +60,137 @@ export default function Join() {
 
       {/* Get Involved Section */}
       <motion.section
-        className="w-full py-8 px-8 md:px-24 bg-white relative"
+        className="w-full pt-8 pb-2 px-8 md:px-24 bg-white relative"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
         variants={fadeInUp}
       >
-        <h2 className="text-3xl font-extrabold text-black text-center mb-2">
+        {/* Decorative shapes */}
+        <div className="hidden md:block absolute left-8 top-8 w-8 h-8 bg-[#a259ff] rounded-lg rotate-12 z-0" />
+        <div className="hidden md:block absolute right-24 top-24 w-6 h-6 bg-[#36f] rounded-md -rotate-12 z-0" />
+        <h2 className="text-4xl font-extrabold text-black text-center mb-2 italic">
           GET INVOLVED
         </h2>
         <p className="text-center text-black text-lg mb-6">
           Choose how you want to participate in the Sandblox mission
         </p>
         <div className="flex justify-center mb-12">
-          <button className="bg-yellow-400 text-black font-extrabold w-full max-w-3xl py-5 rounded shadow hover:bg-yellow-300 transition text-xl tracking-wide">
+          <button className="bg-yellow-400 text-black font-extrabold w-full max-w-8xl py-5 rounded-2xl shadow hover:bg-yellow-300 transition text-xl tracking-wide">
             Bring Sandblox to Your School
           </button>
         </div>
-        {/* Decorative shape */}
       </motion.section>
 
       {/* Participation Cards Section */}
       <motion.section
-        className="w-full py-4 px-8 md:px-24 bg-white"
+        className="w-full pb-12 mt-2 px-8 md:px-24 bg-white relative"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
         variants={fadeInUp}
       >
-        <motion.div
-          className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto"
-          variants={stagger}
-        >
-          {/* For Schools */}
-          <motion.div
-            variants={fadeInUp}
-            className="bg-[#eaf1fb] rounded-xl border-2 border-blue-300 p-8 flex flex-col gap-2"
-          >
-            <div className="flex items-center gap-2 mb-2">
-              <span className="text-3xl text-blue-600">🏫</span>
-              <span className="font-extrabold text-blue-700 text-xl">
-                FOR SCHOOLS
-              </span>
+        {/* Decorative shapes */}
+        <div className="hidden md:block absolute right-10 top-1/2 w-6 h-6 bg-[#fc0] rounded-md -rotate-12 z-0" />
+        <div className="max-w-8xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+          {/* Left: FOR SCHOOLS (tall card) */}
+          <div className="bg-blue-100/60 rounded-2xl shadow-lg border border-blue-200 p-8 flex flex-col justify-between min-h-[340px] text-left">
+            <div className="flex flex-row items-center gap-4 mb-2">
+              <Image
+                src="/Join Page/4a.webp"
+                alt="School"
+                width={75}
+                height={75}
+              />
+              <div className="flex flex-col">
+                <span className="font-extrabold text-blue-600 italic text-4xl md:text-5xl leading-tight">
+                  FOR SCHOOLS
+                </span>
+                <span className="font-bold text-lg text-black">
+                  Build a Culture of Readiness
+                </span>
+              </div>
             </div>
-            <span className="font-bold text-base text-blue-700 mb-1">
-              Build a Culture of Readiness
-            </span>
-            <p className="text-black text-base mb-2">
+
+            <p className="text-gray-700 text-base">
               Use Sandblox to spark real-world skill-building in your classroom.
-              It&apos;s easy to integrate into career, wellness, or advisory
-              programs and comes with ready-to-use guides that support
-              meaningful, student-led learning.
+              It&apos;s easy to integrate into{" "}
+              <span className="font-bold">
+                career, wellness, or advisory programs
+              </span>{" "}
+              and comes with ready-to-use guides that support meaningful,{" "}
+              <span className="font-bold">student-led learning</span>.
             </p>
-            <ul className="list-disc pl-6 text-blue-700 text-base">
-              <li>Full curriculum integration</li>
-              <li>Teacher training and support</li>
-              <li>Implementation frameworks</li>
-              <li>Ongoing assessment tools</li>
-            </ul>
-          </motion.div>
-          {/* For Educators */}
-          <motion.div
-            variants={fadeInUp}
-            className="bg-[#eaf1fb] rounded-xl border-2 border-blue-300 p-8 flex flex-col gap-2"
-          >
-            <div className="flex items-center gap-2 mb-2">
-              <span className="text-3xl text-blue-600">🎓</span>
-              <span className="font-extrabold text-blue-700 text-xl">
-                FOR EDUCATORS
-              </span>
+            <div className="space-y-1">
+              <div className="font-bold text-blue-700 text-base">
+                - Full curriculum integration
+              </div>
+              <div className="font-bold text-blue-700 text-base">
+                - Teacher training and support
+              </div>
+              <div className="font-bold text-blue-700 text-base">
+                - Implementation frameworks
+              </div>
+              <div className="font-bold text-blue-700 text-base">
+                - Ongoing assessment tools
+              </div>
             </div>
-            <span className="font-bold text-base text-blue-700 mb-1">
-              Empower Learning Through Play
-            </span>
-            <p className="text-black text-base mb-2">
-              Bring Sandblox into your classroom to build real-world skills
-              through engaging, curriculum-aligned gameplay. Perfect for
-              advisory, careers, or wellness classes. It includes guides and
-              reflection tools to support easy, impactful use.
-            </p>
-          </motion.div>
-          {/* For Community & Partner */}
-          <motion.div
-            variants={fadeInUp}
-            className="bg-[#eaf1fb] rounded-xl border-2 border-blue-300 p-8 flex flex-col gap-2"
-          >
-            <div className="flex items-center gap-2 mb-2">
-              <span className="text-3xl text-purple-600">🤝</span>
-              <span className="font-extrabold text-purple-700 text-xl">
-                FOR COMMUNITY & PARTNER
-              </span>
+          </div>
+          {/* Right: Stacked cards */}
+          <div className="flex flex-col gap-8">
+            {/* FOR EDUCATORS */}
+            <div className="bg-white rounded-2xl shadow-lg border border-blue-200 p-8 flex flex-col justify-between min-h-[150px] text-left">
+              <div className="flex flex-row items-center gap-4 mb-2">
+                <Image
+                  src="/Join Page/4b.webp"
+                  alt="Educator"
+                  width={75}
+                  height={75}
+                />
+                <div className="flex flex-col">
+                  <span className="font-extrabold text-blue-600 italic text-2xl md:text-4xl leading-tight">
+                    FOR EDUCATORS
+                  </span>
+                  <span className="font-bold text-lg text-black">
+                    Empower Learning Through Play
+                  </span>
+                </div>
+              </div>
+              <p className="text-gray-700 text-base">
+                Bring Sandblox into your classroom to build real-world skills
+                through engaging, curriculum-aligned gameplay. Perfect for
+                advisory, careers, or wellness classes. It includes guides and
+                reflection tools to support easy, impactful use.
+              </p>
             </div>
-            <span className="font-bold text-base text-purple-700 mb-1">
-              Support Future-Ready Students
-            </span>
-            <p className="text-black text-base mb-2">
-              Local partners can sponsor or co-host Sandblox events, bringing
-              real-world experience into schools and showing students their
-              community supports their success.
-            </p>
-          </motion.div>
-        </motion.div>
+            {/* FOR COMMUNITY & PARTNER */}
+            <div className="bg-white rounded-2xl shadow-lg border border-blue-200 p-8 flex flex-col justify-between min-h-[150px] text-left">
+              <div className="flex flex-row items-center gap-4 mb-2">
+                <Image
+                  src="/Join Page/4c.webp"
+                  alt="Community & Partner"
+                  width={75}
+                  height={75}
+                />
+                <div className="flex flex-col">
+                  <span className="font-extrabold text-blue-600 italic text-2xl md:text-4xl leading-tight">
+                    FOR COMMUNITY & PARTNER
+                  </span>
+                  <span className="font-bold text-lg text-black">
+                    Support Future-Ready Students
+                  </span>
+                </div>
+              </div>
+              <p className="text-gray-700 text-base">
+                Local partners can sponsor or co-host Sandblox events, bringing
+                real-world experience into schools and showing students their
+                community supports their success.
+              </p>
+            </div>
+          </div>
+        </div>
         <div className="flex justify-center mt-10">
-          <button className="bg-blue-600 text-white font-extrabold w-full max-w-2xl py-5 rounded shadow hover:bg-blue-500 transition text-xl tracking-wide">
+          <button className="bg-blue-600 text-white font-extrabold w-full max-w-8xl py-5 rounded-2xl shadow hover:bg-blue-500 transition text-xl tracking-wide">
             Contact Us
           </button>
         </div>
@@ -170,53 +198,58 @@ export default function Join() {
 
       {/* Impact Section */}
       <motion.section
-        className="w-full bg-yellow-400 py-16 px-8 md:px-24"
+        className="w-full bg-yellow-400 py-16 px-8 md:px-24 relative"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
         variants={fadeInUp}
       >
-        <h2 className="text-3xl font-extrabold italic text-black text-center mb-2">
+        {/* Decorative shapes */}
+        <div className="hidden md:block absolute left-10 top-10 w-10 h-10 bg-[#6cf] rounded-lg rotate-12 z-0" />
+        <div className="hidden md:block absolute right-24 bottom-8 w-8 h-8 bg-[#a259ff] rounded-lg -rotate-12 z-0" />
+        <h2 className="text-4xl font-extrabold italic text-black text-center mb-2">
           OUR IMPACT
         </h2>
         <p className="text-center text-black text-lg mb-8">
           Together, we&apos;re making a difference in students&apos; lives
         </p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto mb-8">
-          <div className="bg-white rounded-lg shadow-lg border-2 border-black p-8 flex flex-col items-center justify-center">
-            <span className="text-4xl font-extrabold text-[#a41e1e] mb-2">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-10 max-w-6xl mx-auto mb-12">
+          <div className="bg-white shadow-[6px_6px_0_#000] p-10 flex flex-col items-center justify-center min-w-[200px] min-h-[120px]">
+            <span className="text-5xl font-extrabold text-[#a41e1e] mb-2">
               42
             </span>
-            <span className="font-extrabold text-black text-lg">SCHOOLS</span>
+            <span className="font-extrabold text-black text-lg text-center italic uppercase">
+              Schools
+            </span>
           </div>
-          <div className="bg-white rounded-lg shadow-lg border-2 border-black p-8 flex flex-col items-center justify-center">
-            <span className="text-4xl font-extrabold text-[#a41e1e] mb-2">
+          <div className="bg-white shadow-[6px_6px_0_#000] p-10 flex flex-col items-center justify-center min-w-[200px] min-h-[120px]">
+            <span className="text-5xl font-extrabold text-[#a41e1e] mb-2">
               5,200+
             </span>
-            <span className="font-extrabold text-black text-lg">
-              STUDENT REACHED
+            <span className="font-extrabold text-black text-lg text-center italic uppercase">
+              Student Reached
             </span>
           </div>
-          <div className="bg-white rounded-lg shadow-lg border-2 border-black p-8 flex flex-col items-center justify-center">
-            <span className="text-4xl font-extrabold text-[#a41e1e] mb-2">
+          <div className="bg-white shadow-[6px_6px_0_#000] p-10 flex flex-col items-center justify-center min-w-[200px] min-h-[120px]">
+            <span className="text-5xl font-extrabold text-[#a41e1e] mb-2">
               87%
             </span>
-            <span className="font-extrabold text-black text-lg">
-              SKILL IMPROVEMENT
+            <span className="font-extrabold text-black text-lg text-center italic uppercase">
+              Skill Improvement
             </span>
           </div>
-          <div className="bg-white rounded-lg shadow-lg border-2 border-black p-8 flex flex-col items-center justify-center">
-            <span className="text-4xl font-extrabold text-[#a41e1e] mb-2">
+          <div className="bg-white shadow-[6px_6px_0_#000] p-10 flex flex-col items-center justify-center min-w-[200px] min-h-[120px]">
+            <span className="text-5xl font-extrabold text-[#a41e1e] mb-2">
               24
             </span>
-            <span className="font-extrabold text-black text-lg">
-              PARTNER ORGANIZATIONS
+            <span className="font-extrabold text-black text-lg text-center italic uppercase">
+              Partner Organizations
             </span>
           </div>
         </div>
         <div className="flex justify-center">
-          <button className="bg-[#a259ff] text-white font-extrabold px-10 py-4 rounded shadow hover:bg-purple-400 transition text-lg">
-            READ OUR IMPACT REPORT
+          <button className="bg-[#a259ff] text-white font-extrabold italic uppercase px-10 py-4 shadow-[6px_6px_0_#000] rounded-none text-lg tracking-wide hover:bg-purple-400 transition">
+            Read Our Impact Report
           </button>
         </div>
       </motion.section>
@@ -229,7 +262,7 @@ export default function Join() {
         viewport={{ once: true, amount: 0.3 }}
         variants={fadeInUp}
       >
-        <h2 className="text-3xl font-extrabold text-white text-center mb-2">
+        <h2 className="text-4xl font-extrabold text-white text-center italic mb-2">
           STAY CONNECTED
         </h2>
         <p className="text-center text-white text-lg mb-8">
@@ -242,12 +275,12 @@ export default function Join() {
             placeholder="Your email"
             className="px-6 py-3 rounded-l bg-white text-black text-lg focus:outline-none min-w-[260px]"
           />
-          <button className="bg-red-500 text-white font-extrabold px-8 py-3 rounded-r shadow hover:bg-red-600 transition text-lg">
+          <button className="bg-[#a41e1e] text-white font-extrabold px-8 py-3 italic rounded-r shadow hover:bg-red-700 transition text-lg">
             SUBSCRIBE
           </button>
         </div>
-        <Footer />
       </motion.section>
+      <Footer />
     </div>
   );
 }
