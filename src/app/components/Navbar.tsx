@@ -100,7 +100,14 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <Link href="#" className="hover:text-yellow-400">
+          <Link 
+          href="/contact" 
+            className={
+              pathname === "/contact"
+                ? "text-yellow-400"
+                : "hover:text-yellow-400"
+            }
+          >
             CONTACT
           </Link>
         </li>
