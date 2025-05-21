@@ -207,7 +207,7 @@ export default function Skills() {
           The essential competencies students develop through Sandblox gameplay
         </p>
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 max-w-7xl mx-auto">
-          {skills.map((skill, i) => {
+          {skills.map((skill) => {
             // Map skill color to a light Tailwind background
             const bgMap = {
               "#6c8cff": "bg-blue-100",

@@ -69,9 +69,9 @@ export default function Contact() {
           CONTACT US OR DONATE
         </h1>
         <p className="text-white text-lg max-w-2xl mx-auto mb-4">
-          Have questions about Sandblox or need more information? We're here to
-          help! Reach out to our team using the contact form or the information
-          below.
+          Have questions about Sandblox or need more information? We&apos;re here
+          to help! Reach out to our team using the contact form or the
+          information below.
         </p>
         <div className="text-white text-base font-bold mb-1">
           <a
