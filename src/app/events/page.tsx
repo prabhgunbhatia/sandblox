@@ -1,9 +1,10 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import ComingSoonPopup from "../components/ComingSoonPopup";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -11,6 +12,7 @@ const fadeInUp = {
 };
 
 export default function Events() {
+  const [showComingSoon, setShowComingSoon] = useState(false);
   return (
     <div className="min-h-screen bg-white flex flex-col font-sans">
       <Navbar />
@@ -33,13 +35,19 @@ export default function Events() {
             transforming student preparation for real-world success.
           </p>
           <div className="flex gap-4">
-            <button className="group bg-white text-black font-extrabold px-8 py-3 rounded shadow hover:bg-[#a41e1e] hover:text-white transition text-lg">
+            <button
+              onClick={() => setShowComingSoon(true)}
+              className="group bg-white text-black font-extrabold px-8 py-3 rounded shadow hover:bg-[#a41e1e] hover:text-white transition text-lg"
+            >
               GET{" "}
               <span className="text-[#a41e1e] group-hover:text-white transition">
                 STARTED
               </span>
             </button>
-            <button className="bg-yellow-400 text-[#a41e1e] border-2 border-[#a41e1e] font-extrabold px-8 py-3 rounded shadow hover:bg-red-700 hover:text-white transition text-lg">
+            <button
+              onClick={() => setShowComingSoon(true)}
+              className="bg-yellow-400 text-[#a41e1e] border-2 border-[#a41e1e] font-extrabold px-8 py-3 rounded shadow hover:bg-red-700 hover:text-white transition text-lg"
+            >
               LEARN MORE
             </button>
           </div>
@@ -76,7 +84,10 @@ export default function Events() {
           Join us at these upcoming events to experience Sandblox
         </p>
         <div className="flex justify-center mb-8">
-          <button className="bg-yellow-400 text-black font-extrabold w-full max-w-4xl py-4 rounded-2xl shadow hover:bg-yellow-300 transition text-xl tracking-wide">
+          <button
+            onClick={() => setShowComingSoon(true)}
+            className="bg-yellow-400 text-black font-extrabold w-full max-w-4xl py-4 rounded-2xl shadow hover:bg-yellow-300 transition text-xl tracking-wide"
+          >
             ALL EVENTS
           </button>
         </div>
@@ -238,7 +249,7 @@ export default function Events() {
               </li>
               <li className="flex items-start gap-2">
                 <Image
-                  src="/Events-Page/4a3.webp"
+                  src="/Events-Page/4a3.png"
                   alt="bullet"
                   width={20}
                   height={20}
@@ -248,7 +259,7 @@ export default function Events() {
               </li>
               <li className="flex items-start gap-2">
                 <Image
-                  src="/Events-Page/4a3.webp"
+                  src="/Events-Page/4a3.png"
                   alt="bullet"
                   width={20}
                   height={20}
@@ -487,6 +498,10 @@ export default function Events() {
       </motion.section>
 
       <Footer />
+      <ComingSoonPopup
+        isOpen={showComingSoon}
+        onClose={() => setShowComingSoon(false)}
+      />
     </div>
   );
 }

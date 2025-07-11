@@ -6,6 +6,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ComingSoonPopup from "./components/ComingSoonPopup";
 
 // Animation variants
 const fadeInUp = {
@@ -75,6 +76,7 @@ export default function Home() {
   ];
 
   const [testimonialPage, setTestimonialPage] = useState(0);
+  const [showComingSoon, setShowComingSoon] = useState(false);
   const testimonialsPerPage = 2;
   const totalPages = Math.ceil(testimonials.length / testimonialsPerPage);
   const startIdx = testimonialPage * testimonialsPerPage;
@@ -105,10 +107,16 @@ export default function Home() {
             and personalized experiences.
           </p>
           <div className="flex gap-4 mt-2">
-            <button className="bg-yellow-400 text-black font-bold px-6 py-2 italic rounded shadow hover:bg-yellow-300 transition">
+            <button
+              onClick={() => setShowComingSoon(true)}
+              className="bg-yellow-400 text-black font-bold px-6 py-2 italic rounded shadow hover:bg-yellow-300 transition"
+            >
               EXPLORE THE GAME
             </button>
-            <button className="bg-white border-2 border-[#a41e1e] text-[#a41e1e] font-bold px-6 py-2 italic rounded shadow hover:bg-[#a41e1e] hover:text-white transition">
+            <button
+              onClick={() => setShowComingSoon(true)}
+              className="bg-white border-2 border-[#a41e1e] text-[#a41e1e] font-bold px-6 py-2 italic rounded shadow hover:bg-[#a41e1e] hover:text-white transition"
+            >
               FOR EDUCATORS
             </button>
           </div>
@@ -400,7 +408,10 @@ export default function Home() {
             Join the growing network of schools using Sandblox to prepare
             students for real-world success.
           </p>
-          <button className="bg-yellow-400 italic text-black font-bold px-6 py-2 rounded shadow hover:bg-yellow-300 transition w-fit">
+          <button
+            onClick={() => setShowComingSoon(true)}
+            className="bg-yellow-400 italic text-black font-bold px-6 py-2 rounded shadow hover:bg-yellow-300 transition w-fit"
+          >
             GET <span className="text-[#a41e1e]"> STARTED</span>
           </button>
         </div>
@@ -424,6 +435,10 @@ export default function Home() {
       </motion.section>
 
       <Footer />
+      <ComingSoonPopup
+        isOpen={showComingSoon}
+        onClose={() => setShowComingSoon(false)}
+      />
     </div>
   );
 }

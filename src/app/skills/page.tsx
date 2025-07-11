@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import ComingSoonPopup from "../components/ComingSoonPopup";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -153,6 +154,7 @@ const skillsInActionContent = [
 
 export default function Skills() {
   const [activeTab, setActiveTab] = useState(0);
+  const [showComingSoon, setShowComingSoon] = useState(false);
 
   return (
     <div className="min-h-screen bg-white flex flex-col font-sans">
@@ -436,7 +438,10 @@ export default function Skills() {
               Curriculum integration frameworks
             </li>
           </ul>
-          <button className="bg-[#a259ff] text-white font-extrabold px-8 py-3 rounded shadow hover:bg-purple-400 transition text-lg mt-2">
+          <button
+            onClick={() => setShowComingSoon(true)}
+            className="bg-[#a259ff] text-white font-extrabold px-8 py-3 rounded shadow hover:bg-purple-400 transition text-lg mt-2"
+          >
             COMING SOON
           </button>
         </div>
@@ -451,6 +456,10 @@ export default function Skills() {
       </section>
 
       <Footer />
+      <ComingSoonPopup
+        isOpen={showComingSoon}
+        onClose={() => setShowComingSoon(false)}
+      />
     </div>
   );
 }

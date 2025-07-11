@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import ComingSoonPopup from "../components/ComingSoonPopup";
 
 const gameplayTabs = [
   {
@@ -80,6 +81,7 @@ const stagger = {
 
 export default function Game() {
   const [activeTab, setActiveTab] = useState(0);
+  const [showComingSoon, setShowComingSoon] = useState(false);
   return (
     <div className="min-h-screen bg-white flex flex-col font-sans">
       <Navbar />
@@ -345,7 +347,10 @@ export default function Game() {
           </svg>
         </div>
         <div className="flex justify-center mt-12">
-          <button className="bg-yellow-400 text-black font-extrabold italic px-10 py-4 rounded shadow-[4px_4px_0_#000] text-lg tracking-wide hover:bg-yellow-300 transition">
+          <button
+            onClick={() => setShowComingSoon(true)}
+            className="bg-yellow-400 text-black font-extrabold italic px-10 py-4 rounded shadow-[4px_4px_0_#000] text-lg tracking-wide hover:bg-yellow-300 transition"
+          >
             DOWNLOAD FULL INSTRUCTIONS
           </button>
         </div>
@@ -596,10 +601,16 @@ export default function Game() {
               </div>
             </div>
             <div className="flex gap-6 mt-4">
-              <button className="bg-[#2196f3] text-white font-extrabold italic text-lg px-8 py-3 rounded shadow-[4px_4px_0_#000] tracking-wide hover:bg-blue-500 transition">
+              <button
+                onClick={() => setShowComingSoon(true)}
+                className="bg-[#2196f3] text-white font-extrabold italic text-lg px-8 py-3 rounded shadow-[4px_4px_0_#000] tracking-wide hover:bg-blue-500 transition"
+              >
                 APP STORE
               </button>
-              <button className="bg-[#8e24aa] text-white font-extrabold italic text-lg px-8 py-3 rounded shadow-[4px_4px_0_#000] tracking-wide hover:bg-purple-700 transition">
+              <button
+                onClick={() => setShowComingSoon(true)}
+                className="bg-[#8e24aa] text-white font-extrabold italic text-lg px-8 py-3 rounded shadow-[4px_4px_0_#000] tracking-wide hover:bg-purple-700 transition"
+              >
                 GOOGLE PLAY
               </button>
             </div>
@@ -620,6 +631,10 @@ export default function Game() {
       </motion.section>
 
       <Footer />
+      <ComingSoonPopup
+        isOpen={showComingSoon}
+        onClose={() => setShowComingSoon(false)}
+      />
     </div>
   );
 }

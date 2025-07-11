@@ -1,9 +1,10 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import ComingSoonPopup from "../components/ComingSoonPopup";
 
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
@@ -11,6 +12,7 @@ const fadeInUp = {
 };
 
 export default function Join() {
+  const [showComingSoon, setShowComingSoon] = useState(false);
   return (
     <div className="min-h-screen bg-white flex flex-col font-sans">
       <Navbar />
@@ -187,7 +189,10 @@ export default function Join() {
           </div>
         </div>
         <div className="flex justify-center mt-10">
-          <button className="bg-blue-600 text-white font-extrabold w-full max-w-8xl py-5 rounded-2xl shadow hover:bg-blue-500 transition text-xl tracking-wide">
+          <button
+            onClick={() => setShowComingSoon(true)}
+            className="bg-blue-600 text-white font-extrabold w-full max-w-8xl py-5 rounded-2xl shadow hover:bg-blue-500 transition text-xl tracking-wide"
+          >
             Contact Us
           </button>
         </div>
@@ -245,7 +250,10 @@ export default function Join() {
           </div>
         </div>
         <div className="flex justify-center">
-          <button className="bg-[#a259ff] text-white font-extrabold italic uppercase px-10 py-4 shadow-[6px_6px_0_#000] rounded-none text-lg tracking-wide hover:bg-purple-400 transition">
+          <button
+            onClick={() => setShowComingSoon(true)}
+            className="bg-[#a259ff] text-white font-extrabold italic uppercase px-10 py-4 shadow-[6px_6px_0_#000] rounded-none text-lg tracking-wide hover:bg-purple-400 transition"
+          >
             Read Our Impact Report
           </button>
         </div>
@@ -272,12 +280,19 @@ export default function Join() {
             placeholder="Your email"
             className="px-6 py-3 rounded-l bg-white text-black text-lg focus:outline-none min-w-[260px]"
           />
-          <button className="bg-[#a41e1e] text-white font-extrabold px-8 py-3 italic rounded-r shadow hover:bg-red-700 transition text-lg">
+          <button
+            onClick={() => setShowComingSoon(true)}
+            className="bg-[#a41e1e] text-white font-extrabold px-8 py-3 italic rounded-r shadow hover:bg-red-700 transition text-lg"
+          >
             SUBSCRIBE
           </button>
         </div>
       </motion.section>
       <Footer />
+      <ComingSoonPopup
+        isOpen={showComingSoon}
+        onClose={() => setShowComingSoon(false)}
+      />
     </div>
   );
 }
