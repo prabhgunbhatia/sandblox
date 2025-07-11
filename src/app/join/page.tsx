@@ -44,7 +44,7 @@ export default function Join() {
         <div className="flex-1 flex justify-center relative z-10">
           <div className="relative">
             <Image
-              src="/Join Page/2.webp"
+              src="/Join-Page/2.webp"
               alt="Students collaborating"
               width={630}
               height={420}
@@ -94,7 +94,7 @@ export default function Join() {
           <div className="bg-blue-100/60 rounded-2xl shadow-lg border border-blue-200 p-8 flex flex-col justify-between min-h-[340px] text-left">
             <div className="flex flex-row items-center gap-4 mb-2">
               <Image
-                src="/Join Page/4a.webp"
+                src="/Join-Page/4a.webp"
                 alt="School"
                 width={75}
                 height={75}
@@ -139,7 +139,7 @@ export default function Join() {
             <div className="bg-white rounded-2xl shadow-lg border border-blue-200 p-8 flex flex-col justify-between min-h-[150px] text-left">
               <div className="flex flex-row items-center gap-4 mb-2">
                 <Image
-                  src="/Join Page/4b.webp"
+                  src="/Join-Page/4b.webp"
                   alt="Educator"
                   width={75}
                   height={75}
@@ -164,7 +164,7 @@ export default function Join() {
             <div className="bg-white rounded-2xl shadow-lg border border-blue-200 p-8 flex flex-col justify-between min-h-[150px] text-left">
               <div className="flex flex-row items-center gap-4 mb-2">
                 <Image
-                  src="/Join Page/4c.webp"
+                  src="/Join-Page/4c.webp"
                   alt="Community & Partner"
                   width={75}
                   height={75}

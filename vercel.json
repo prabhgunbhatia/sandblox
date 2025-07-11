@@ -10,6 +10,60 @@
       ]
     },
     {
+      "source": "/Home-Page/(.*)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "image/webp"
+        }
+      ]
+    },
+    {
+      "source": "/About-Page/(.*)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "image/webp"
+        }
+      ]
+    },
+    {
+      "source": "/Events-Page/(.*)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "image/webp"
+        }
+      ]
+    },
+    {
+      "source": "/Contact-Page/(.*)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "image/webp"
+        }
+      ]
+    },
+    {
+      "source": "/Join-Page/(.*)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "image/webp"
+        }
+      ]
+    },
+    {
+      "source": "/Skills-Page/(.*)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "image/webp"
+        }
+      ]
+    },
+    {
       "source": "/(.*)\\.webp",
       "headers": [
         {

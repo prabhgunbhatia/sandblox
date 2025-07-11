@@ -1,4 +1,22 @@
-/Game page/*.webp
+/Game-Page/*.webp
+  Content-Type: image/webp
+
+/Home-Page/*.webp
+  Content-Type: image/webp
+
+/About-Page/*.webp
+  Content-Type: image/webp
+
+/Events-Page/*.webp
+  Content-Type: image/webp
+
+/Contact-Page/*.webp
+  Content-Type: image/webp
+
+/Join-Page/*.webp
+  Content-Type: image/webp
+
+/Skills-Page/*.webp
   Content-Type: image/webp
 
 /*.webp

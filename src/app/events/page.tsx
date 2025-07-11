@@ -86,7 +86,7 @@ export default function Events() {
           <div className="flex flex-col md:flex-row gap-0 items-stretch">
             <div className="flex-shrink-0">
               <Image
-                src="/Events Page/3a.webp"
+                src="/Events-Page/3a.webp"
                 alt="Event 1"
                 width={320}
                 height={180}
@@ -121,7 +121,7 @@ export default function Events() {
           <div className="flex flex-col md:flex-row gap-0 items-stretch">
             <div className="flex-shrink-0">
               <Image
-                src="/Events Page/3b.webp"
+                src="/Events-Page/3b.webp"
                 alt="Event 2"
                 width={320}
                 height={180}
@@ -155,7 +155,7 @@ export default function Events() {
           <div className="flex flex-col md:flex-row gap-0 items-stretch">
             <div className="flex-shrink-0">
               <Image
-                src="/Events Page/3c.webp"
+                src="/Events-Page/3c.webp"
                 alt="Event 3"
                 width={320}
                 height={180}
@@ -218,7 +218,7 @@ export default function Events() {
             <ul className="pl-0 text-black text-base mb-4 flex flex-col gap-2">
               <li className="flex items-start gap-2">
                 <Image
-                  src="/Events Page/4a3.webp"
+                  src="/Events-Page/4a3.webp"
                   alt="bullet"
                   width={20}
                   height={20}
@@ -228,7 +228,7 @@ export default function Events() {
               </li>
               <li className="flex items-start gap-2">
                 <Image
-                  src="/Events Page/4a3.png"
+                  src="/Events-Page/4a3.png"
                   alt="bullet"
                   width={20}
                   height={20}
@@ -238,7 +238,7 @@ export default function Events() {
               </li>
               <li className="flex items-start gap-2">
                 <Image
-                  src="/Events Page/4a3.webp"
+                  src="/Events-Page/4a3.webp"
                   alt="bullet"
                   width={20}
                   height={20}
@@ -248,7 +248,7 @@ export default function Events() {
               </li>
               <li className="flex items-start gap-2">
                 <Image
-                  src="/Events Page/4a3.webp"
+                  src="/Events-Page/4a3.webp"
                   alt="bullet"
                   width={20}
                   height={20}
@@ -273,7 +273,7 @@ export default function Events() {
             <ul className="pl-0 text-black text-base mb-4 flex flex-col gap-2">
               <li className="flex items-start gap-2">
                 <Image
-                  src="/Events Page/4b3.webp"
+                  src="/Events-Page/4b3.webp"
                   alt="bullet"
                   width={20}
                   height={20}
@@ -283,7 +283,7 @@ export default function Events() {
               </li>
               <li className="flex items-start gap-2">
                 <Image
-                  src="/Events Page/4b3.webp"
+                  src="/Events-Page/4b3.webp"
                   alt="bullet"
                   width={20}
                   height={20}
@@ -293,7 +293,7 @@ export default function Events() {
               </li>
               <li className="flex items-start gap-2">
                 <Image
-                  src="/Events Page/4b3.webp"
+                  src="/Events-Page/4b3.webp"
                   alt="bullet"
                   width={20}
                   height={20}
@@ -303,7 +303,7 @@ export default function Events() {
               </li>
               <li className="flex items-start gap-2">
                 <Image
-                  src="/Events Page/4b3.webp"
+                  src="/Events-Page/4b3.webp"
                   alt="bullet"
                   width={20}
                   height={20}
@@ -328,7 +328,7 @@ export default function Events() {
             <ul className="pl-0 text-black text-base mb-4 flex flex-col gap-2">
               <li className="flex items-start gap-2">
                 <Image
-                  src="/Events Page/4c3.webp"
+                  src="/Events-Page/4c3.webp"
                   alt="bullet"
                   width={20}
                   height={20}
@@ -338,7 +338,7 @@ export default function Events() {
               </li>
               <li className="flex items-start gap-2">
                 <Image
-                  src="/Events Page/4c3.webp"
+                  src="/Events-Page/4c3.webp"
                   alt="bullet"
                   width={20}
                   height={20}
@@ -348,7 +348,7 @@ export default function Events() {
               </li>
               <li className="flex items-start gap-2">
                 <Image
-                  src="/Events Page/4c3.webp"
+                  src="/Events-Page/4c3.webp"
                   alt="bullet"
                   width={20}
                   height={20}
@@ -358,7 +358,7 @@ export default function Events() {
               </li>
               <li className="flex items-start gap-2">
                 <Image
-                  src="/Events Page/4c3.webp"
+                  src="/Events-Page/4c3.webp"
                   alt="bullet"
                   width={20}
                   height={20}

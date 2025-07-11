@@ -92,7 +92,7 @@ const skillsInActionContent = [
     },
     practicality: {
       text: `Academic success builds a strong foundation for lifelong learning. It teaches students how to manage their time, solve problems, and stay motivated through challenges.\n\nThese skills not only improve grades but also create habits that carry over into post-secondary education, careers, and personal growth beyond the classroom.`,
-      icon: "/Skills Page/5a.webp",
+      icon: "/Skills-Page/5a.webp",
     },
   },
   {
@@ -110,7 +110,7 @@ const skillsInActionContent = [
     },
     practicality: {
       text: `Career readiness prepares students for life after school by helping them explore interests, set goals, and develop professional skills.\n\nKnowing how to write a résumé, succeed in interviews, and work with others gives students confidence and direction as they transition into part-time jobs, apprenticeships, or long-term careers.`,
-      icon: "/Skills Page/5b.webp",
+      icon: "/Skills-Page/5b.webp",
     },
   },
   {
@@ -128,7 +128,7 @@ const skillsInActionContent = [
     },
     practicality: {
       text: `Life management is essential for becoming an independent, capable adult. Skills like budgeting, organizing responsibilities, and making healthy choices help students navigate everyday challenges.\n\nWhether it's paying bills or planning meals, life management ensures students are ready to take care of themselves and adapt to real-world situations with confidence.`,
-      icon: "/Skills Page/5c.webp",
+      icon: "/Skills-Page/5c.webp",
     },
   },
   {
@@ -146,7 +146,7 @@ const skillsInActionContent = [
     },
     practicality: {
       text: `Social well-being is key to building strong relationships and maintaining mental health. Learning how to communicate, set boundaries, and resolve conflict helps students thrive in friendships, family dynamics, and team settings.\n\nThese skills foster emotional intelligence, self-awareness, and a deeper sense of belonging in both school and life.`,
-      icon: "/Skills Page/5d.webp",
+      icon: "/Skills-Page/5d.webp",
     },
   },
 ];
@@ -180,7 +180,7 @@ export default function Skills() {
         <div className="flex-1 flex justify-center relative z-10">
           <div>
             <Image
-              src="/Skills Page/2a.webp"
+              src="/Skills-Page/2a.webp"
               alt="Skills Hero"
               width={600}
               height={400}
@@ -292,7 +292,7 @@ export default function Skills() {
         {/* Right: Image */}
         <div className="flex-1 flex justify-center items-center">
           <Image
-            src="/Skills Page/4a.webp"
+            src="/Skills-Page/4a.webp"
             alt="Skill Development Process"
             width={400}
             height={400}
@@ -405,7 +405,7 @@ export default function Skills() {
           <ul className="text-white text-base md:text-lg mb-6 space-y-2">
             <li className="flex items-start gap-2">
               <img
-                src="/Skills Page/6a.webp"
+                src="/Skills-Page/6a.webp"
                 alt="bullet"
                 className="w-6 h-6 mt-1"
               />
@@ -413,7 +413,7 @@ export default function Skills() {
             </li>
             <li className="flex items-start gap-2">
               <img
-                src="/Skills Page/6a.webp"
+                src="/Skills-Page/6a.webp"
                 alt="bullet"
                 className="w-6 h-6 mt-1"
               />
@@ -421,7 +421,7 @@ export default function Skills() {
             </li>
             <li className="flex items-start gap-2">
               <img
-                src="/Skills Page/6a.webp"
+                src="/Skills-Page/6a.webp"
                 alt="bullet"
                 className="w-6 h-6 mt-1"
               />
@@ -429,7 +429,7 @@ export default function Skills() {
             </li>
             <li className="flex items-start gap-2">
               <img
-                src="/Skills Page/6a.webp"
+                src="/Skills-Page/6a.webp"
                 alt="bullet"
                 className="w-6 h-6 mt-1"
               />
@@ -443,7 +443,7 @@ export default function Skills() {
         {/* Right: Image */}
         <div className="flex-1 flex justify-center items-center">
           <img
-            src="/Skills Page/6b.webp"
+            src="/Skills-Page/6b.webp"
             alt="Educator Resources"
             className="rounded-xl object-cover w-full max-w-xl h-auto"
           />
