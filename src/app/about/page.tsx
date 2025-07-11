@@ -105,7 +105,7 @@ export default function About() {
         <div className="flex-1 flex justify-center relative">
           <div className="relative">
             <Image
-              src="/Home Page/2.webp"
+              src="/Home-Page/2.webp"
               alt="About Sandblox"
               width={700}
               height={440}
