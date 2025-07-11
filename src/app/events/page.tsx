@@ -47,7 +47,7 @@ export default function Events() {
         <div className="flex-1 flex justify-center relative z-10">
           <div className="relative rotate-3">
             <Image
-              src="/Events Page/2a.webp"
+              src="/Events-Page/2a.webp"
               alt="Events Hero"
               width={600}
               height={400}
@@ -228,7 +228,7 @@ export default function Events() {
               </li>
               <li className="flex items-start gap-2">
                 <Image
-                  src="/Events Page/4a3.webp"
+                  src="/Events Page/4a3.png"
                   alt="bullet"
                   width={20}
                   height={20}

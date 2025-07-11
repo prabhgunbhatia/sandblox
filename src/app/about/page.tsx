@@ -23,49 +23,49 @@ const teamMembers = [
   {
     name: "ROMAN BUZAKER",
     role: "Founder & Program Architect",
-    img: "/About Page/4a.webp",
+    img: "/About-Page/4a.webp",
     color: "text-blue-700",
     desc: "Serial entrepreneur, father of three, and current COO of a publicly traded company. Leads the vision, structure, and product direction of Sandblox.",
   },
   {
     name: "DR. SARIT TRESSER",
     role: "Chief Product / Science Officer",
-    img: "/About Page/4b.webp",
+    img: "/About-Page/4b.webp",
     color: "text-purple-700",
     desc: "PhD in Occupational Therapy. Expert in neurodevelopment and executive innovation. Leads curriculum and product design.",
   },
   {
     name: "IGAL ROYTBLAT",
     role: "Chief Technology Officer (CTO)",
-    img: "/About Page/4c.webp",
+    img: "/About-Page/4c.webp",
     color: "text-green-700",
     desc: "Tech leader and AI architect. Oversees platform development, AI integration, and infrastructure.",
   },
   {
     name: "ASAF AKHALPERIN",
     role: "Chief Business Development",
-    img: "/About Page/4d.webp",
+    img: "/About-Page/4d.webp",
     color: "text-blue-700",
     desc: "Entrepreneur and strategist. Leads partner outreach, brand storytelling, and school engagement.",
   },
   {
     name: "AVI MEIDAN",
     role: "Advisor-Education <br /> (Israel)",
-    img: "/About Page/4e.webp",
+    img: "/About-Page/4e.webp",
     color: "text-yellow-700",
     desc: "Provides guidance on education and school partnerships and program implementation in the Israeli school system.",
   },
   {
     name: "DR. CASSIDY GONG",
     role: "Advisor-Curriculum <br /> (Global)",
-    img: "/About Page/4f.webp",
+    img: "/About-Page/4f.webp",
     color: "text-red-700",
     desc: "Advises on emotional, leadership, and academic development. Focused on holistic youth growth.",
   },
   {
     name: "DR. EDITA GROLMAN",
     role: "Advisor-AI & Innovation",
-    img: "/About Page/4g.webp",
+    img: "/About-Page/4g.webp",
     color: "text-purple-700",
     desc: "Advises on emotional, leadership, and academic development. Focused on holistic youth growth.",
   },
@@ -203,7 +203,7 @@ export default function About() {
             className="focus:outline-none"
           >
             <Image
-              src="/About Page/4h.webp"
+              src="/About-Page/4h.webp"
               alt="Left Arrow"
               width={40}
               height={40}
@@ -254,7 +254,7 @@ export default function About() {
             className="focus:outline-none"
           >
             <Image
-              src="/About Page/4i.webp"
+              src="/About-Page/4i.webp"
               alt="Right Arrow"
               width={40}
               height={40}

@@ -116,7 +116,7 @@ export default function Home() {
         <div className="flex-1 flex justify-center">
           <div className="relative">
             <Image
-              src="/Home Page/2.webp"
+              src="/Home-Page/2.webp"
               alt="Students playing Sandblox"
               width={400}
               height={260}
@@ -168,7 +168,7 @@ export default function Home() {
             <div className="relative bg-white border-2 border-black rounded z-10 w-full h-full p-6 flex flex-col items-center text-center">
               <div className="absolute -top-7 left-1/2 -translate-x-1/2 w-14 h-14 bg-blue-400 rounded-lg flex items-center justify-center shadow-md">
                 <Image
-                  src="/Home Page/3a.webp"
+                  src="/Home-Page/3a.webp"
                   alt="Real-world Skills"
                   width={32}
                   height={32}
@@ -195,7 +195,7 @@ export default function Home() {
             <div className="relative bg-white border-2 border-black rounded z-10 w-full h-full p-6 flex flex-col items-center text-center">
               <div className="absolute -top-7 left-1/2 -translate-x-1/2 w-14 h-14 bg-purple-400 rounded-lg flex items-center justify-center shadow-md">
                 <Image
-                  src="/Home Page/3b.webp"
+                  src="/Home-Page/3b.webp"
                   alt="Personalized Learning"
                   width={32}
                   height={32}
@@ -222,7 +222,7 @@ export default function Home() {
             <div className="relative bg-white border-2 border-black rounded z-10 w-full h-full p-6 flex flex-col items-center text-center">
               <div className="absolute -top-7 left-1/2 -translate-x-1/2 w-14 h-14 bg-green-500 rounded-lg flex items-center justify-center shadow-md">
                 <Image
-                  src="/Home Page/3c.webp"
+                  src="/Home-Page/3c.webp"
                   alt="Mentorship that Matters"
                   width={32}
                   height={32}
@@ -248,7 +248,7 @@ export default function Home() {
             <div className="relative bg-white border-2 border-black rounded z-10 w-full h-full p-6 flex flex-col items-center text-center">
               <div className="absolute -top-7 left-1/2 -translate-x-1/2 w-14 h-14 bg-yellow-400 rounded-lg flex items-center justify-center shadow-md">
                 <Image
-                  src="/Home Page/3d.webp"
+                  src="/Home-Page/3d.webp"
                   alt="Purpose-driven Play"
                   width={32}
                   height={32}
@@ -407,7 +407,7 @@ export default function Home() {
         <div className="flex-1 flex justify-center">
           <div className="relative flex items-center justify-center w-fit">
             <Image
-              src="/Home Page/5.webp"
+              src="/Home-Page/5.webp"
               alt="Ready Set Play"
               width={750}
               height={700}

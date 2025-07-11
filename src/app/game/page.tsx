@@ -115,11 +115,12 @@ export default function Game() {
           <motion.div className="relative" variants={fadeInUp}>
             <motion.div variants={fadeInUp}>
               <Image
-                src="/Game page/2a.webp"
+                src="/Game-Page/2a.webp"
                 alt="Game Cards"
                 width={800}
                 height={520}
                 unoptimized
+                priority
               />
             </motion.div>
           </motion.div>
@@ -152,7 +153,7 @@ export default function Game() {
           >
             <div className="relative w-full h-[220px] border-1 border-black">
               <Image
-                src="/Game page/3a.webp"
+                src="/Game-Page/3a.webp"
                 alt="Game Board"
                 fill
                 style={{ objectFit: "cover" }}
@@ -178,7 +179,7 @@ export default function Game() {
           >
             <div className="relative w-full h-[220px] border-1 border-black">
               <Image
-                src="/Game page/3b.webp"
+                src="/Game-Page/3b.webp"
                 alt="Challenge Cards"
                 fill
                 style={{ objectFit: "cover" }}
@@ -204,7 +205,7 @@ export default function Game() {
           >
             <div className="relative w-full h-[220px] border-1 border-black">
               <Image
-                src="/Game page/3c.webp"
+                src="/Game-Page/3c.webp"
                 alt="Mobile App"
                 fill
                 style={{ objectFit: "cover" }}
@@ -414,7 +415,7 @@ export default function Game() {
                         className="flex items-center gap-2 text-black text-lg font-medium"
                       >
                         <Image
-                          src="/Game page/5a.webp"
+                          src="/Game-Page/5a.webp"
                           alt="bullet"
                           width={22}
                           height={22}
@@ -448,7 +449,7 @@ export default function Game() {
                         className="flex items-center gap-2 text-black text-lg font-medium"
                       >
                         <Image
-                          src="/Game page/5b.webp"
+                          src="/Game-Page/5b.webp"
                           alt="bullet"
                           width={22}
                           height={22}
@@ -482,7 +483,7 @@ export default function Game() {
                         className="flex items-center gap-2 text-black text-lg font-medium"
                       >
                         <Image
-                          src="/Game page/5c.webp"
+                          src="/Game-Page/5c.webp"
                           alt="bullet"
                           width={22}
                           height={22}
@@ -516,7 +517,7 @@ export default function Game() {
                         className="flex items-center gap-2 text-black text-lg font-medium"
                       >
                         <Image
-                          src="/Game page/5d.webp"
+                          src="/Game-Page/5d.webp"
                           alt="bullet"
                           width={22}
                           height={22}
@@ -537,7 +538,7 @@ export default function Game() {
           <div className="flex-1 flex justify-center items-center relative min-w-[320px]">
             <div>
               <Image
-                src="/Game page/5e.webp"
+                src="/Game-Page/5e.webp"
                 alt="Gameplay Features Board"
                 width={640}
                 height={400}
@@ -606,12 +607,13 @@ export default function Game() {
           {/* Right: Phone Image */}
           <div className="flex-1 flex justify-center items-center">
             <Image
-              src="/Game page/6c.webp"
+              src="/Game-Page/6c.webp"
               alt="Mobile App Phone"
               width={340}
               height={500}
               className="object-contain"
               unoptimized
+              priority
             />
           </div>
         </div>

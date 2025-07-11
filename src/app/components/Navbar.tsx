@@ -24,7 +24,7 @@ export default function Navbar() {
       <div className="flex items-center gap-4">
         <Link href="/">
           <Image
-            src="/Home Page/1a.webp"
+            src="/Home-Page/1a.webp"
             alt="Sandblox Logo"
             width={140}
             height={40}
@@ -100,8 +100,8 @@ export default function Navbar() {
           </Link>
         </li>
         <li>
-          <Link 
-          href="/contact" 
+          <Link
+            href="/contact"
             className={
               pathname === "/contact"
                 ? "text-yellow-400"

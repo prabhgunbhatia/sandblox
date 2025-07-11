@@ -21,7 +21,7 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-start gap-8 px-8 pb-10 pt-4">
         <div className="flex flex-col gap-2">
           <Image
-            src="/Home Page/1a.webp"
+            src="/Home-Page/1a.webp"
             alt="Sandblox Logo"
             width={180}
             height={48}
@@ -34,7 +34,7 @@ export default function Footer() {
           <div className="flex gap-2 mt-2">
             <a href="#">
               <Image
-                src="/Home Page/6d.webp"
+                src="/Home-Page/6d.webp"
                 alt="Instagram"
                 width={24}
                 height={24}
@@ -42,7 +42,7 @@ export default function Footer() {
             </a>
             <a href="#">
               <Image
-                src="/Home Page/6b.webp"
+                src="/Home-Page/6b.webp"
                 alt="Twitter"
                 width={24}
                 height={24}
@@ -50,7 +50,7 @@ export default function Footer() {
             </a>
             <a href="#">
               <Image
-                src="/Home Page/6c.webp"
+                src="/Home-Page/6c.webp"
                 alt="Facebook"
                 width={24}
                 height={24}
