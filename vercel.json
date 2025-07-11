@@ -1,7 +1,7 @@
 {
   "headers": [
     {
-      "source": "/Game page/(.*)",
+      "source": "/Game-Page/(.*)",
       "headers": [
         {
           "key": "Content-Type",
