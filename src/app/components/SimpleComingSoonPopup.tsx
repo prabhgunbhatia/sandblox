@@ -14,16 +14,16 @@ export default function SimpleComingSoonPopup({
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 animate-fadeIn">
-      <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-8 relative animate-slideIn">
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+      <div className="bg-white rounded-2xl shadow-2xl max-w-sm sm:max-w-md w-full p-6 sm:p-8 relative">
         {/* Close button */}
         <button
           onClick={onClose}
-          className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition-colors"
+          className="absolute top-3 right-3 sm:top-4 sm:right-4 text-gray-400 hover:text-gray-600 transition-colors"
           aria-label="Close popup"
         >
           <svg
-            className="w-6 h-6"
+            className="w-5 h-5 sm:w-6 sm:h-6"
             fill="none"
             stroke="currentColor"
             viewBox="0 0 24 24"
@@ -40,9 +40,9 @@ export default function SimpleComingSoonPopup({
         {/* Content */}
         <div className="text-center">
           {/* Icon */}
-          <div className="mx-auto w-16 h-16 bg-yellow-400 rounded-full flex items-center justify-center mb-6">
+          <div className="mx-auto w-12 h-12 sm:w-16 sm:h-16 bg-yellow-400 rounded-full flex items-center justify-center mb-4 sm:mb-6">
             <svg
-              className="w-8 h-8 text-white"
+              className="w-6 h-6 sm:w-8 sm:h-8 text-white"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -57,18 +57,18 @@ export default function SimpleComingSoonPopup({
           </div>
 
           {/* Title */}
-          <h3 className="text-2xl font-extrabold text-gray-800 mb-3 italic">
+          <h3 className="text-xl sm:text-2xl font-extrabold text-gray-800 mb-2 sm:mb-3 italic">
             COMING SOON
           </h3>
 
           {/* Message */}
-          <p className="text-gray-600 text-lg mb-6 leading-relaxed">
-            We're working hard to bring you this feature. Stay tuned for
+          <p className="text-gray-600 text-sm sm:text-lg mb-4 sm:mb-6 leading-relaxed">
+            We&apos;re working hard to bring you this feature. Stay tuned for
             updates!
           </p>
 
           {/* Decorative elements */}
-          <div className="flex justify-center gap-2 mb-6">
+          <div className="flex justify-center gap-2 mb-4 sm:mb-6">
             <div className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"></div>
             <div
               className="w-2 h-2 bg-yellow-400 rounded-full animate-pulse"
@@ -83,7 +83,7 @@ export default function SimpleComingSoonPopup({
           {/* Action button */}
           <button
             onClick={onClose}
-            className="bg-yellow-400 text-black font-extrabold px-8 py-3 rounded-lg shadow-lg hover:bg-yellow-300 transition-all duration-200 transform hover:scale-105 italic"
+            className="bg-yellow-400 text-black font-extrabold px-6 sm:px-8 py-2 sm:py-3 rounded-lg shadow-lg hover:bg-yellow-300 transition-all duration-200 transform hover:scale-105 italic text-sm sm:text-base"
           >
             GOT IT
           </button>

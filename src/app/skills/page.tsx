@@ -406,33 +406,41 @@ export default function Skills() {
           </div>
           <ul className="text-white text-base md:text-lg mb-6 space-y-2">
             <li className="flex items-start gap-2">
-              <img
+              <Image
                 src="/Skills-Page/6a.webp"
                 alt="bullet"
+                width={24}
+                height={24}
                 className="w-6 h-6 mt-1"
               />
               Implementation guides for classroom settings
             </li>
             <li className="flex items-start gap-2">
-              <img
+              <Image
                 src="/Skills-Page/6a.webp"
                 alt="bullet"
+                width={24}
+                height={24}
                 className="w-6 h-6 mt-1"
               />
               Assessment tools to measure skill development
             </li>
             <li className="flex items-start gap-2">
-              <img
+              <Image
                 src="/Skills-Page/6a.webp"
                 alt="bullet"
+                width={24}
+                height={24}
                 className="w-6 h-6 mt-1"
               />
               Professional development workshops
             </li>
             <li className="flex items-start gap-2">
-              <img
+              <Image
                 src="/Skills-Page/6a.webp"
                 alt="bullet"
+                width={24}
+                height={24}
                 className="w-6 h-6 mt-1"
               />
               Curriculum integration frameworks
@@ -447,9 +455,11 @@ export default function Skills() {
         </div>
         {/* Right: Image */}
         <div className="flex-1 flex justify-center items-center">
-          <img
+          <Image
             src="/Skills-Page/6b.webp"
             alt="Educator Resources"
+            width={400}
+            height={300}
             className="rounded-xl object-cover w-full max-w-xl h-auto"
           />
         </div>
