@@ -1,0 +1,22 @@
+{
+  "headers": [
+    {
+      "source": "/Game page/(.*)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "image/webp"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)\\.webp",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "image/webp"
+        }
+      ]
+    }
+  ]
+}

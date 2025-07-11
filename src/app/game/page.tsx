@@ -119,6 +119,7 @@ export default function Game() {
                 alt="Game Cards"
                 width={800}
                 height={520}
+                unoptimized
               />
             </motion.div>
           </motion.div>
@@ -156,6 +157,7 @@ export default function Game() {
                 fill
                 style={{ objectFit: "cover" }}
                 className=""
+                unoptimized
               />
             </div>
             <div className="bg-white w-full h-[160px] p-6 flex flex-col items-start justify-center border-1 border-black">
@@ -181,6 +183,7 @@ export default function Game() {
                 fill
                 style={{ objectFit: "cover" }}
                 className=""
+                unoptimized
               />
             </div>
             <div className="bg-white w-full h-[160px] p-6 flex flex-col items-start justify-center border-1 border-black">
@@ -206,6 +209,7 @@ export default function Game() {
                 fill
                 style={{ objectFit: "cover" }}
                 className=""
+                unoptimized
               />
             </div>
             <div className="bg-white w-full h-[160px] p-6 flex flex-col items-start justify-center border-1 border-black">
@@ -415,6 +419,7 @@ export default function Game() {
                           width={22}
                           height={22}
                           className="inline-block"
+                          unoptimized
                         />
                         <span>{item}</span>
                       </li>
@@ -448,6 +453,7 @@ export default function Game() {
                           width={22}
                           height={22}
                           className="inline-block"
+                          unoptimized
                         />
                         <span>{item}</span>
                       </li>
@@ -481,6 +487,7 @@ export default function Game() {
                           width={22}
                           height={22}
                           className="inline-block"
+                          unoptimized
                         />
                         <span>{item}</span>
                       </li>
@@ -514,6 +521,7 @@ export default function Game() {
                           width={22}
                           height={22}
                           className="inline-block"
+                          unoptimized
                         />
                         <span>{item}</span>
                       </li>
@@ -534,6 +542,7 @@ export default function Game() {
                 width={640}
                 height={400}
                 className="object-contain"
+                unoptimized
               />
             </div>
           </div>
@@ -602,6 +611,7 @@ export default function Game() {
               width={340}
               height={500}
               className="object-contain"
+              unoptimized
             />
           </div>
         </div>
