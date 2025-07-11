@@ -2,20 +2,20 @@
 
 import React from "react";
 
-interface ComingSoonPopupProps {
+interface SimpleComingSoonPopupProps {
   isOpen: boolean;
   onClose: () => void;
 }
 
-export default function ComingSoonPopup({
+export default function SimpleComingSoonPopup({
   isOpen,
   onClose,
-}: ComingSoonPopupProps) {
+}: SimpleComingSoonPopupProps) {
   if (!isOpen) return null;
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
-      <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-8 relative">
+    <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4 animate-fadeIn">
+      <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-8 relative animate-slideIn">
         {/* Close button */}
         <button
           onClick={onClose}
@@ -63,7 +63,7 @@ export default function ComingSoonPopup({
 
           {/* Message */}
           <p className="text-gray-600 text-lg mb-6 leading-relaxed">
-            We&apos;re working hard to bring you this feature. Stay tuned for
+            We're working hard to bring you this feature. Stay tuned for
             updates!
           </p>
 

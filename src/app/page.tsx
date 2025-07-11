@@ -6,7 +6,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-import ComingSoonPopup from "./components/ComingSoonPopup";
+import SimpleComingSoonPopup from "./components/SimpleComingSoonPopup";
 
 // Animation variants
 const fadeInUp = {
@@ -435,7 +435,7 @@ export default function Home() {
       </motion.section>
 
       <Footer />
-      <ComingSoonPopup
+      <SimpleComingSoonPopup
         isOpen={showComingSoon}
         onClose={() => setShowComingSoon(false)}
       />
