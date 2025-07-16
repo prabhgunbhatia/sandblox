@@ -25,7 +25,7 @@ const teamMembers = [
     role: "Founder & Program Architect",
     img: "/About-Page/4a.webp",
     color: "text-blue-700",
-    desc: "Serial entrepreneur, father of three, and current COO of a publicly traded company. Leads the vision, structure, and product direction of Sandblox.",
+    desc: "Serial entrepreneur, father of three, with a track record of building ventures and leading teams across industries. Passionate about turning bold ideas into real-world impact.",
   },
   {
     name: "DR. SARIT TRESSER",
@@ -62,18 +62,11 @@ const teamMembers = [
     color: "text-red-700",
     desc: "Advises on emotional, leadership, and academic development. Focused on holistic youth growth.",
   },
-  {
-    name: "DR. EDITA GROLMAN",
-    role: "Advisor-AI & Innovation",
-    img: "/About-Page/4g.webp",
-    color: "text-purple-700",
-    desc: "Advises on emotional, leadership, and academic development. Focused on holistic youth growth.",
-  },
 ];
 
 export default function About() {
   const [slide, setSlide] = useState(0);
-  const slides = [teamMembers.slice(0, 4), teamMembers.slice(4, 7)];
+  const slides = [teamMembers.slice(0, 3), teamMembers.slice(3, 6)];
   return (
     <div className="min-h-screen bg-white flex flex-col font-sans">
       <Navbar />
@@ -301,41 +294,48 @@ export default function About() {
               sandbox&mdash;where teens practice life, not just prepare for it.
             </p>
           </div>
-          <div className="flex-1 grid grid-rows-2 grid-cols-2 gap-x-8 gap-y-10 place-items-stretch">
-            {/* Top Row */}
-            <div className="relative bg-[#eef2ff] border border-blue-500 p-8 flex flex-col justify-center shadow-[8px_8px_0_0_#3b82f6]">
-              <span className="text-4xl font-extrabold text-blue-600 mb-2">
-                8
-              </span>
-              <span className="text-black font-bold text-lg leading-tight">
-                Core development skills
-              </span>
+          <div className="flex-1 flex flex-col gap-6">
+            <div className="text-center mb-4 ml-8">
+              <h3 className="text-2xl font-extrabold italic text-black mb-2">
+                PLAN OF <span className="text-[#a41e1e]">2025-2026</span>
+              </h3>
             </div>
-            <div className="relative bg-[#fdecec] border border-[#f87171] p-8 flex flex-col justify-center shadow-[8px_8px_0_0_#f87171]">
-              <span className="text-4xl font-extrabold text-[#f87171] mb-2">
-                150+
-              </span>
-              <span className="text-black font-bold text-lg leading-tight">
-                Students impacted
-              </span>
-            </div>
-            {/* Bottom Row: custom flex for 2/3 and 1/3 */}
-            <div className="col-span-2 flex gap-8">
-              <div className="relative bg-[#e6fbfa] border border-[#14b8a6] p-8 flex-2 flex flex-col justify-center shadow-[8px_8px_0_0_#14b8a6] w-3/4">
-                <span className="text-4xl font-extrabold text-[#14b8a6] mb-2">
-                  4
+            <div className="grid grid-rows-2 grid-cols-2 gap-x-8 gap-y-10 place-items-stretch">
+              {/* Top Row */}
+              <div className="relative bg-[#eef2ff] border border-blue-500 p-8 flex flex-col justify-center shadow-[8px_8px_0_0_#3b82f6]">
+                <span className="text-4xl font-extrabold text-blue-600 mb-2">
+                  8
                 </span>
                 <span className="text-black font-bold text-lg leading-tight">
-                  Schools initially testing
+                  Core development skills
                 </span>
               </div>
-              <div className="relative bg-[#ede9fe] border border-[#a21caf] p-8 flex-1 flex flex-col justify-center shadow-[8px_8px_0_0_#a21caf] w-1/3">
-                <span className="text-4xl font-extrabold text-[#a21caf] mb-2">
-                  2
+              <div className="relative bg-[#fdecec] border border-[#f87171] p-8 flex flex-col justify-center shadow-[8px_8px_0_0_#f87171]">
+                <span className="text-4xl font-extrabold text-[#f87171] mb-2">
+                  150+
                 </span>
                 <span className="text-black font-bold text-lg leading-tight">
-                  Countries
+                  Students impacted
                 </span>
+              </div>
+              {/* Bottom Row: custom flex for 2/3 and 1/3 */}
+              <div className="col-span-2 flex gap-8">
+                <div className="relative bg-[#e6fbfa] border border-[#14b8a6] p-8 flex-2 flex flex-col justify-center shadow-[8px_8px_0_0_#14b8a6] w-3/4">
+                  <span className="text-4xl font-extrabold text-[#14b8a6] mb-2">
+                    4
+                  </span>
+                  <span className="text-black font-bold text-lg leading-tight">
+                    Schools initially testing
+                  </span>
+                </div>
+                <div className="relative bg-[#ede9fe] border border-[#a21caf] p-8 flex-1 flex flex-col justify-center shadow-[8px_8px_0_0_#a21caf] w-1/3">
+                  <span className="text-4xl font-extrabold text-[#a21caf] mb-2">
+                    2
+                  </span>
+                  <span className="text-black font-bold text-lg leading-tight">
+                    Countries
+                  </span>
+                </div>
               </div>
             </div>
           </div>

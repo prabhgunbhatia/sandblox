@@ -210,7 +210,7 @@ export default function Join() {
         <div className="hidden md:block absolute left-10 top-10 w-10 h-10 bg-[#6cf] rounded-lg rotate-12 z-0" />
         <div className="hidden md:block absolute right-24 bottom-8 w-8 h-8 bg-[#a259ff] rounded-lg -rotate-12 z-0" />
         <h2 className="text-4xl font-extrabold italic text-black text-center mb-2">
-          OUR IMPACT
+          OUR GOALS FOR 2025-2026
         </h2>
         <p className="text-center text-black text-lg mb-8">
           Together, we&apos;re making a difference in students&apos; lives
@@ -218,7 +218,7 @@ export default function Join() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-10 max-w-6xl mx-auto mb-12">
           <div className="bg-white shadow-[6px_6px_0_#000] p-10 flex flex-col items-center justify-center min-w-[200px] min-h-[120px]">
             <span className="text-5xl font-extrabold text-[#a41e1e] mb-2">
-              42
+              16
             </span>
             <span className="font-extrabold text-black text-lg text-center italic uppercase">
               Schools
@@ -226,7 +226,7 @@ export default function Join() {
           </div>
           <div className="bg-white shadow-[6px_6px_0_#000] p-10 flex flex-col items-center justify-center min-w-[200px] min-h-[120px]">
             <span className="text-5xl font-extrabold text-[#a41e1e] mb-2">
-              5,200+
+              1,200+
             </span>
             <span className="font-extrabold text-black text-lg text-center italic uppercase">
               Student Reached
